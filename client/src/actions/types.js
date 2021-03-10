@@ -1,0 +1,8 @@
+export const LOGGING = "LOGGING";
+export const LOGGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGGIN_FAILURE = "LOGGIN_FAILURE";
+export const LOGGIN_RESET = "LOGGIN_RESET";
+
+export const SIGNUPING = "SIGNUPING";
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNUP_FAILURE = "SIGNUP_FAILURE";
