@@ -117,14 +117,14 @@ const Home = (props) => {
       <Paper className={classes.root}>
         <Container>
           <Grid container className={classes.container}>
-            <Grid item xs={3}>
+            <Grid item md={3} xs={4}>
               {users.map((userItem, idx) =>
                 userItem.user._id != user._id ? (
                   <FriendPane key={idx} name={userItem.user.name} />
                 ) : null
               )}
             </Grid>
-            <Grid item xs={6} className={classes.relative}>
+            <Grid item md={6} xs={8} className={classes.relative}>
               <MessageContainer ref={messageContainerRef}>
                 {messages.map((message, idx) =>
                   message.name == user.name ? (
@@ -144,7 +144,7 @@ const Home = (props) => {
                 value={message.text}
               />
             </Grid>
-            <Grid item xs={3}></Grid>
+            <Grid item md={3} only={"md"}></Grid>
           </Grid>
         </Container>
       </Paper>
