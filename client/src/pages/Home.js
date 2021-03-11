@@ -144,7 +144,9 @@ const Home = (props) => {
                 value={message.text}
               />
             </Grid>
-            <Grid item md={3} only={"md"}></Grid>
+            <Grid item md={3} only={"md"}>
+              {" "}
+            </Grid>
           </Grid>
         </Container>
       </Paper>
